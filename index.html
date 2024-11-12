@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=JetBrains+Mono' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="header-nav">
+            <h1 style="margin: 0; position: absolute; left: 20px; font-size: 25px">&lt; /run Main &gt;</h1>
+            <button id="run-button" class="run-button">Run</button>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- New Vertical Column -->
+        <div class="vertical-column">
+         
+        </div>
+        <div class="sidebar">
+            <h2>Files</h2>
+            <ul class="file-list">
+                <li class="file" data-file="home">Main.html</li>
+                <li class="file" data-file="about">About.css</li>
+                <li class="file" data-file="contact">Projects.js</li>
+                <li class="file" data-file="articles">Cat.idk</li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="tabs">
+                <span class="tab active" data-file="home">Main.html <span class="close">&times;</span></span>
+            </div>
+            <div class="content">
+                <!-- Home Section -->
+                <div id="home" class="content-page active, text-box" >
+                    <h1 style="font-size: 3.5rem; text-align: center; color: #bd93f9; text-align: center;">Aryana K Sharif Z</h1>
+                    <p style="font-size: 2rem; text-align: center; text-align: center;">Software Engineering Major</p>
+                    <p class="middle">This is my portfolio, where you can explore a collection of my work, projects, and skills. Feel free to browse and get a closer look at what I do. If you have any questions or would like to collaborate, don’t hesitate to reach out!</p>
+                </div>
+
+                <!-- About Section -->
+                <div id="about" class="content-page">
+                    <h1  style="color: #bd93f9;">About Me</h1>
+                    <p>Hello, I'm Aryana!</p>
+                    <p>I'm a fourth-year Software Engineering major at the University of Texas at Dallas. I enjoy learning and collaborating with others to create impactful projects.</p>
+                    <pre class="socials" style="color: #bd93f9;">
+    .socials {
+        website: aryanaksharifz.me;
+        email: aryanak@example.com;
+        github: itsaryana;
+        linkedin: aryanaksharifz;       
+    }
+
+
+    .languages {
+        Java: 90%;
+        C++, C: 90%;
+        HTML, CSS, JAVASCRIPT: 50%;
+        SQL: 90%;   
+        MIPS: 80%;   
+    }
+                    </pre>
+                </div>
+                
+                <!-- Contact Section -->
+                <div id="contact" class="content-page">
+                    <h1 style="color: #bd93f9;" >Projects</h1>
+                    <div id="projects" class="projects-section">
+                        <div class="project-box">
+                            <h3>Ants vs. Beetles</h3>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1xJLnKJbOdFaWp_0b4ONbulw1AB7i4Fr_rg&s" alt="Project 1 Image">
+                            <p>Developed "Ants vs. Beetles," a Java game with advanced AI for insect behavior</p>
+                        </div>
+                        <div class="project-box">
+                            <h3>Dots and Boxes</h3>
+                            <img src="https://static.thenounproject.com/png/762420-200.png" alt="Project 2 Image">
+                            <p>Led a team of four in developing a classic Dots and Boxes game using Assembly
+                                language.</p>
+                        </div>
+                        <div class="project-box">
+                            <h3>Database Modeling</h3>
+                            <img src="https://www.svgrepo.com/show/336616/database-code.svg" alt="Project 3 Image">
+                            <p>Led the modeling phase in constructing a database for the Database Class, focusing on design
+                                and implementation.</p>
+                        </div>
+                        <div class="project-box">
+                            <h3>Web Porfolio</h3>
+                            <img src="https://cdn-icons-png.flaticon.com/512/9364/9364669.png" alt="Project 4 Image">
+                            <p>I developed a portfolio website to showcase my skills and projects, demonstrating my proficiency in web development and my commitment to continuous growth in my field.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!-- Articles Section -->
+                <div id="articles" class="content-page active, text-box">
+                    <h1 style="color: #bd93f9;" >Fun fact about me</h1>
+                    <p>I really like cats. Don’t believe me? Just hit the Run button :3</p>
+                    <img style="width: 50%;" src="https://i.pinimg.com/564x/a6/f2/30/a6f230e306e811ed2593571d68777253.jpg" alt="cat">
+                    <ul>
+                        <li><a href="https://www.youtube.com/watch?v=2yJgwwDcgV8" target="_blank">You have been Cat</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup Modal -->
+    <div id="popup-modal" class="popup-modal">
+        <div class="popup-content">
+            <span id="close-popup" class="close-popup">&times;</span>
+            <video id="popup-video" autoplay loop muted>
+                <source src="https://preview.redd.it/oaokmnk65ja61.gif?width=350&format=mp4&s=5b343cc9e761a2d78bf0066d78ceb141c4e0368e" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

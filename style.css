@@ -1,0 +1,336 @@
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .project-box {
+        width: calc(50% - 20px); /* Two boxes per row */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .project-box {
+        width: 100%; /* One box per row */
+    }
+}
+  
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'JetBrains Mono', monospace;
+    background-color: #44475a;
+    color: #FFFFFF;
+}
+#about {
+    padding: 20px;
+    background-color: #282a36;
+    color: #f8f8f2;
+    border-radius: 8px;
+}
+
+.projects-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center align the boxes */
+    gap: 20px;
+    padding: 20px;
+    background-color: #44475a;
+    border-radius: 8px;
+}
+
+.project-box {
+    background-color: #282a36;
+    color: #f8f8f2;
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(50% - 20px); /* Two boxes per row */
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-box img {
+    width: 80px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project-box h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #bd93f9;
+}
+
+.project-box p {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-box p img {
+    width: 100px; /* Set a width for the image inside the description */
+    height: auto;
+    border-radius: 8px;
+    margin: 10px 0; /* Adjust margin to position the image nicely */
+}
+
+
+
+
+#about h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #bd93f9;
+}
+
+.socials {
+    background-color: #282a36;
+    color: #f8f8f2;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'JetBrains Mono', monospace;
+    line-height: 1.5;
+    white-space: pre-wrap; /* Allows line breaks within the text */
+    margin-top: 10px; /* Adds some space above the pre element */
+}
+
+
+/* Header Section */
+.header {
+    background: hsl(235, 15%, 15%);
+    color: #FFFFFF;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.vertical-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50px;  /* Adjusted width */
+    background: hsl(235, 15%, 15%);
+    padding: 10px;  /* Adjusted padding */
+    color: #CCCCCC;
+}
+
+.vertical-column img {
+    width: 100%;  /* Make the image fit the column width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: auto; /* Push the image to the bottom */
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: #282a36;
+    padding: 20px;
+    font-size: 22px;
+}
+
+.file-list {
+    list-style: none;
+    padding: 0;
+    font-size: 19px;
+}
+
+.file-list li {
+    margin: 10px 0;
+    cursor: pointer;
+    color: #CCCCCC;
+}
+/* Hide content when there are no tabs open */
+.content.empty {
+    display: none;
+}
+
+.file-list li:hover {
+    color: #FFFFFF;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs {
+    background: #282a36;
+    padding: 10px;
+    display: flex;
+}
+
+.tab {
+    margin-right: 10px;
+    padding: 5px 10px;
+    background: #44475a;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.tab.active {
+    background: #44475a;
+}
+
+.close {
+    margin-left: 10px;
+    color: #282a36;
+    cursor: pointer;
+}
+
+li a {
+    color: #bd93f9; /* Default color */
+    text-decoration: none; /* Optional: to remove underline */
+}
+
+li a:active {
+    color: #6272a4; /* Color when the link is pressed */
+}
+
+
+.content {
+    padding: 40px;
+    flex: 1;
+}
+
+.content-page {
+    display: none;
+}
+
+.content-page.active {
+    display: block;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: #9147FF;
+    color: white;
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 1px solid #9147FF;
+    color: white;
+}
+
+/* Style for the Run button */
+.run-button {
+    background-color: #bd93f9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.run-button:hover {
+    background-color: #6272a4;
+}
+
+/* Style for the popup modal */
+.popup-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+.popup-content {
+    background-color: #000; /* Black background */
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    text-align: center; /* Center the content */
+}
+
+.popup-content video {
+    width: 100%; /* Make the video responsive */
+    max-width: 500px; /* Limit the maximum width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.middle {
+    width: 80%;
+    max-width: 600px;
+    padding: 10px;
+    margin: 0 auto; /* Centers the container horizontally */
+    border: none; /* Invisible border */
+    text-align: center; /* Horizontally center the text inside */
+    word-wrap: break-word; /* Ensures long words wrap onto the next line */
+}
+
+.text-box {
+    background-color: #282a36; /* Same as the background color used for About section */
+    border: 2px solid #282a36; /* Purple border for the box */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    color: white;
+}
+
+.text-box h1 {
+    color: #bd93f9; /* Purple for heading */
+}
+
+.text-box p {
+    font-size: 1.2rem; /* Adjust the font size as needed */
+}
+
+
+.close-popup {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-popup:hover,
+.close-popup:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
