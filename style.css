@@ -1,10 +1,10 @@
 @media only screen and (max-width: 600px) {
     body {
-      background-color: lightblue;
+        background-color: lightblue;
     }
-  }
+}
 
-  @media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) {
     .project-box {
         width: calc(50% - 20px); /* Two boxes per row */
     }
@@ -15,7 +15,6 @@
         width: 100%; /* One box per row */
     }
 }
-  
 
 body {
     margin: 0;
@@ -24,11 +23,13 @@ body {
     background-color: #44475a;
     color: #FFFFFF;
 }
+
 #about {
     padding: 20px;
     background-color: #282a36;
     color: #f8f8f2;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Added shadow */
 }
 
 .projects-section {
@@ -39,6 +40,7 @@ body {
     padding: 20px;
     background-color: #44475a;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Added shadow */
 }
 
 .project-box {
@@ -52,6 +54,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Added shadow */
 }
 
 .project-box img {
@@ -81,9 +84,6 @@ body {
     margin: 10px 0; /* Adjust margin to position the image nicely */
 }
 
-
-
-
 #about h2 {
     font-size: 1.5rem;
     margin-top: 20px;
@@ -99,8 +99,8 @@ body {
     line-height: 1.5;
     white-space: pre-wrap; /* Allows line breaks within the text */
     margin-top: 10px; /* Adds some space above the pre element */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Added shadow */
 }
-
 
 /* Header Section */
 .header {
@@ -108,6 +108,7 @@ body {
     color: #FFFFFF;
     padding: 10px 20px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Added shadow */
 }
 
 .header-nav {
@@ -135,6 +136,7 @@ body {
     background: hsl(235, 15%, 15%);
     padding: 10px;  /* Adjusted padding */
     color: #CCCCCC;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Added shadow */
 }
 
 .vertical-column img {
@@ -151,6 +153,7 @@ body {
     background: #282a36;
     padding: 20px;
     font-size: 22px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Added shadow */
 }
 
 .file-list {
@@ -163,10 +166,6 @@ body {
     margin: 10px 0;
     cursor: pointer;
     color: #CCCCCC;
-}
-/* Hide content when there are no tabs open */
-.content.empty {
-    display: none;
 }
 
 .file-list li:hover {
@@ -183,6 +182,7 @@ body {
     background: #282a36;
     padding: 10px;
     display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Added shadow */
 }
 
 .tab {
@@ -193,10 +193,11 @@ body {
     cursor: pointer;
     display: flex;
     align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Added shadow */
 }
 
 .tab.active {
-    background: #44475a;
+    background: #30323f;
 }
 
 .close {
@@ -214,10 +215,10 @@ li a:active {
     color: #6272a4; /* Color when the link is pressed */
 }
 
-
 .content {
     padding: 40px;
     flex: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Added shadow */
 }
 
 .content-page {
@@ -285,6 +286,7 @@ button {
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
     text-align: center; /* Center the content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Added shadow */
 }
 
 .popup-content video {
@@ -292,6 +294,22 @@ button {
     max-width: 500px; /* Limit the maximum width */
     height: auto; /* Maintain aspect ratio */
 }
+
+.resize{
+    width: 10%;
+}
+.sidebar .file {
+    display: flex;
+    align-items: center; /* Align icons and text vertically */
+    margin-bottom: 10px; /* Optional: Add space between list items */
+}
+
+.sidebar .file-icon {
+    width: 20px;  /* Small icon size */
+    height: 20px;  /* Small icon size */
+    margin-right: 10px; /* Space between icon and text */
+}
+
 
 .middle {
     width: 80%;
@@ -301,36 +319,18 @@ button {
     border: none; /* Invisible border */
     text-align: center; /* Horizontally center the text inside */
     word-wrap: break-word; /* Ensures long words wrap onto the next line */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Added shadow */
 }
 
 .text-box {
-    background-color: #282a36; /* Same as the background color used for About section */
-    border: 2px solid #282a36; /* Purple border for the box */
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px 0;
-    color: white;
-}
-
-.text-box h1 {
-    color: #bd93f9; /* Purple for heading */
-}
-
-.text-box p {
-    font-size: 1.2rem; /* Adjust the font size as needed */
-}
-
-
-.close-popup {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close-popup:hover,
-.close-popup:focus {
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
+    background-color: #282a36; /* Same as the background color of your project box */
+    color: #f8f8f2; /* Same as the text color in your project box */
+    border: none; /* No border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px; /* Padding inside the text box */
+    font-family: 'JetBrains Mono', monospace; /* Font style */
+    font-size: 1rem; /* Font size */
+    word-wrap: break-word; /* Ensures long words wrap onto the next line */
+    width: 100%; /* Full width of the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Added shadow */
 }
